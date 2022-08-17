@@ -1,13 +1,20 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import { RouterLink } from "vue-router";
-interface Props {
-  btnText: string;
-  iconName?: string;
-  href?: string;
-}
-const props = defineProps<Props>();
+const props = defineProps({
+  btnText:{
+    type:String,
+    required: true
+  },
+  iconName:{
+    type: String,
+    required: false
+  },
+  href:{
+    type:[String, Object],
+    default: '/'
+  }
+});
 </script>
 <template>
   <RouterLink v-if="props.href" :to="props.href">
