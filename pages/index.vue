@@ -1,5 +1,11 @@
-<script setup></script>
+<script setup>
+definePageMeta({
+  layout: false,
+});
+</script>
 
 <template>
-  <PageHeader pageTitle="Overview" />
+  <NuxtLayout name="dashboard">
+    <PageHeader pageTitle="Overview" />
+  </NuxtLayout>
 </template>
