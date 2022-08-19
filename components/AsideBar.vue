@@ -17,6 +17,11 @@
         class="p-5 cursor-pointer block hover:bg-h-gray hover:text-primary-h-color"
         >Projects</RouterLink
       >
+      <RouterLink
+        to="/auth"
+        class="p-5 cursor-pointer block hover:bg-h-gray hover:text-primary-h-color"
+        >Auth</RouterLink
+      >
     </ul>
   </aside>
 </template>

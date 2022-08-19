@@ -9,6 +9,7 @@ module.exports = {
         "primary-h-color": "#D9D9D9",
         body: "#F7F8FC",
         "page-title": "#252733",
+        card:'#fff'
       },
     },
   },

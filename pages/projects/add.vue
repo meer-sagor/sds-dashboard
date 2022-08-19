@@ -9,7 +9,10 @@ definePageMeta({
   <NuxtLayout name="dashboard">
     <h1>user Name: {{ userName }}</h1>
     <section>
-      <BaseFormInput v-model="userName" />
+      <BaseFormInput label="your name" v-model="userName" />
+      <BaseCard>
+      <h1>Hello card</h1>
+      </BaseCard>
     </section>
   </NuxtLayout>
 </template>
