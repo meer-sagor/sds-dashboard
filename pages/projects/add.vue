@@ -4,15 +4,18 @@ const userName = useState(() => null);
 definePageMeta({
   layout: false,
 });
+const handleSubmit = () => {
+  console.log("you click");
+};
 </script>
 <template>
   <NuxtLayout name="dashboard">
-    <h1>user Name: {{ userName }}</h1>
-    <section>
-      <BaseFormInput label="your name" v-model="userName" />
+    <form @submit.prevent="handleSubmit">
       <BaseCard>
-      <h1>Hello card</h1>
+        <BaseFormInput label="Project Name" v-model="userName" />
+        <BaseFormInput label="Project" v-model="userName" />
+        <BaseButton btnText="Add Project" />
       </BaseCard>
-    </section>
+    </form>
   </NuxtLayout>
 </template>
