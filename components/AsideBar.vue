@@ -17,10 +17,15 @@
         class="p-5 cursor-pointer block hover:bg-h-gray hover:text-primary-h-color"
         >Projects</RouterLink
       >
-      <RouterLink
+      <!-- <RouterLink
         to="/auth"
         class="p-5 cursor-pointer block hover:bg-h-gray hover:text-primary-h-color"
         >Auth</RouterLink
+      > -->
+      <RouterLink
+        to="/member"
+        class="p-5 cursor-pointer block hover:bg-h-gray hover:text-primary-h-color"
+        >Member</RouterLink
       >
     </ul>
   </aside>
